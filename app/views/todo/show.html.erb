@@ -1,12 +1,13 @@
 
  <h1>            
      To-Do
-     
-     </h1>
+ </h1>
      <br>
+     <div class = "card">
      <%= @todo.description%>
         <span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
-        <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
-        <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
-        <a href="/todo/index">Go Back</a>
+        </div>
+        <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button"><button>Edit</button></a>
+        <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button"><button>Delete</button></a>
+        <a href="/todo/index"><button>Go Back</button></a>
         

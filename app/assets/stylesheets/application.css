@@ -14,11 +14,15 @@
  *= require_self
  */
 html{
-    font-family: sans-serif;
-    color:LightSlateGrey;
+    background-color:coral; 
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color:Black;
 }
 li{
     color:DeepSkyBlue;
+    font-family: 'Roboto Slab', serif;
 }
 input::placeholder{
     border:3px dotted black;
@@ -32,7 +36,8 @@ input::placeholder{
   font-size: 10px;
   padding: 5px 10px 5px 10px;
 }
-#addToDo{
+button{
+  font-family:'Montserrat', sans-serif;
   font-size: 15px;
   text-align: center;
   color: white;
@@ -42,11 +47,30 @@ input::placeholder{
   border-radius: 3px;
   box-shadow: 2px 2px 1px #90A4AE;
   display: block;
-  background-color: Plum;
+  background-color: Black;
   margin-top: 10px;
 }
 #addToDo:active{
     box-shadow: 1px 1px 1px #90A4AE;
     
 }
-
+.card{
+    background-color: white;
+    border-radius:10%;
+    padding:50px;
+    width:300px;
+}
+#input{
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  outline: none;
+  border-style: none;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px #90A4AE;
+  display: block;
+  background-color: Black;
+  margin-top: 10px;
+}

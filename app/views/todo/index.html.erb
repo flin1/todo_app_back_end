@@ -1,26 +1,14 @@
-<h1>hello world!</h1>
-<h1>To-do</h1>
-    <ul>
-       
+<h1>To-do!</h1>
+    <ul class ="card">
+       <% @todos.each do |todo| %>
         <li>
-                <input type="checkbox" /> 
-                <a href="show/1">do homework</a>, <span class="pomodoro-estimate">8 pomodoros</span>
+            <input type="checkbox" /> 
+            <a href="show/<%= todo.id %>"><%= todo.description %></a>
+            <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoros</span>
         </li>
-        <li>
-            <input type="checkbox" /><a href= "show/2">clean the bathroom</a>,<span class="pomodoro-estimate">
-            1 pomodoro</span>
-        </li>
-        <li>
-            <input type="checkbox" /><a href ="show/3">eat food</a>,<span class="pomodoro-estimate">2 pomodoros</span>
-        </li>
-        <li>
-            <input type="checkbox" /><a href= "show/4">knit</a>,<span class="pomodoro-estimate">as many pomodoros as i want</span>
-        </li>
-        <li>
-            <input type="checkbox" />add new to-do
-        </li>
-    </ul>
-    <input type="text" placeholder="New to-do" />
-    <input type="number" placeholder="# of pomodoros" />
-    <input type="submit" id="addToDo"/>
     
+        <% end %>
+    </ul>
+    <div id="new-todo-block">
+            <a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button"><button>Add a to-do</button></a>
+        </div>
